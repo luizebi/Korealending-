@@ -1,43 +1,47 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>대출 신청 | Apply for a Loan</title>
-  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Loan Application - KoreaLend</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    h2 {
+      color: #2c3e50;
+    }
+    .form-link {
+      margin-top: 20px;
+    }
+    button {
+      padding: 12px 24px;
+      font-size: 16px;
+      background-color: #2c3e50;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #1a252f;
+    }
+  </style>
 </head>
 <body>
-  <header>
-    <h1>대출 신청서 <small>(Loan Application Form)</small></h1>
-  </header>
 
-  <form action="https://formsubmit.co/korealend@example.com" method="POST">
-    <label>이름 (Full Name)</label>
-    <input type="text" name="name" required>
+  <h2>Loan Application</h2>
+  <p>To apply for a loan, click the button below. You'll be redirected to our secure Google Form.</p>
 
-    <label>이메일 (Email)</label>
-    <input type="email" name="email" required>
+  <div class="form-link">
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSczugBLJHmLqwe9TtEbJcqVm-nlGxhapLSHQCRsM18nb1ak-A/viewform?usp=dialog" target="_blank">
+      <button>Apply Now</button>
+    </a>
+  </div>
 
-    <label>대출 금액 (Loan Amount in ₩)</label>
-    <input type="number" name="amount" required>
-
-    <label>고용 상태 (Employment Status)</label>
-    <select name="employment">
-      <option value="employed">재직 중 (Employed)</option>
-      <option value="self-employed">자영업 (Self-Employed)</option>
-      <option value="unemployed">무직 (Unemployed)</option>
-    </select>
-
-    <label>대출 사유 (Loan Purpose)</label>
-    <input type="text" name="purpose" required>
-
-    <label>월 소득 (Monthly Income in ₩)</label>
-    <input type="number" name="income" required>
-
-    <button type="submit">제출 (Submit)</button>
-  </form>
-
-  <footer>
-    <p><a href="index.html">← 홈페이지로 돌아가기 (Back to Home)</a></p>
-  </footer>
 </body>
 </html>
+updated form to google form 
