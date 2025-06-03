@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>대출 신청 | Apply for a Loan</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>대출 신청서 <small>(Loan Application Form)</small></h1>
+  </header>
+
+  <form action="https://formsubmit.co/korealend@example.com" method="POST">
+    <label>이름 (Full Name)</label>
+    <input type="text" name="name" required>
+
+    <label>이메일 (Email)</label>
+    <input type="email" name="email" required>
+
+    <label>대출 금액 (Loan Amount in ₩)</label>
+    <input type="number" name="amount" required>
+
+    <label>고용 상태 (Employment Status)</label>
+    <select name="employment">
+      <option value="employed">재직 중 (Employed)</option>
+      <option value="self-employed">자영업 (Self-Employed)</option>
+      <option value="unemployed">무직 (Unemployed)</option>
+    </select>
+
+    <label>대출 사유 (Loan Purpose)</label>
+    <input type="text" name="purpose" required>
+
+    <label>월 소득 (Monthly Income in ₩)</label>
+    <input type="number" name="income" required>
+
+    <button type="submit">제출 (Submit)</button>
+  </form>
+
+  <footer>
+    <p><a href="index.html">← 홈페이지로 돌아가기 (Back to Home)</a></p>
+  </footer>
+</body>
+</html>
